@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    
+}
+
+body{
+    background: #f2f2f2;
+}
+
+/* header con buscador */
+nav{ 
+    background: #222222;
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #536970;
+    border-left: none;
+    border-right: none;
+}
+.trasparent {
+    background-color: #ffff !important;
+}
+
+
+  .dropdown-item:hover {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: #9ca1a7;
+  }
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.dropdown-menu {
+    background-color: #aeb5bf ;
+}
+
+.logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+}
+.items{
+    padding: 0 25px;
+    display: inline-flex;
+}
+.items a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+.items a:hover {
+    color: cyan;
+}
+
+.Boton-icon{
+height: 40px;
+width: 240px;
+display: flex;
+background: #f2f2f2;
+border-radius: 5px;
+}
+
+.Boton-icon input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.Boton-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.Boton-icon .icon:hover{
+background: #e6e6e6
+}
+
+
+.Boton-icon .icon span {
+    color: #222222;
+    font-size: 18px;
+}
+nav ul li.btnSpan {
+    font-size: 29px;
+    flex: 1;
+    padding: 0 40px;
+    display: none;
+}
+nav ul li.btnSpan span {
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #151515;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li.btnSpan span.show:before {
+    content: '\f00d';
+    
+}
+
+
+
+
+/* paginaprincipal */
+
+.homepage {
+    position: relative;
+    height: 200vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover !important;
+    background: url("carrusel3.jpg");
+    
+
+}
+.homepage::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.homepage .content {
+    display: flex;
+    position: relative;
+    height: 85%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.homepage .texto{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.homepage .texto h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+.homepage a {
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) ;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.homepage a:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+}
+   
+
+/* servicios */
+
+section {
+    padding-top: 80px;
+}
+
+.section-tilte {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+
+}
+
+
+section .cards {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+section .card {
+    width: calc(100% / 3 - 30px);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    text-align: justify;
+
+}
+
+section .card img {
+    height: 120px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+}
+section .card p {
+    margin-top: 5px;
+}
+
+/* galleria */
+
+.gallery .card{
+    padding: 0 0 20px;
+}
+
+
+.gallery .card img {
+height: 240px;
+width: 100%;
+border-radius: 5px 5px 0 0;
+
+}
+
+.gallery .texto{
+    text-align: center;
+
+}
+
+/* contacto */
+.contact .row{
+    margin: 60px 0 90px;
+    justify-content: space-between;
+
+}
+.contact .row .col{
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+}
+
+.contact .row .col p{
+    padding: 0 10px;
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+.contact .row .col p i {
+    margin-right: 10px;
+}
+
+.contact form input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+
+}
+
+.contact form textarea {
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    resize: none;
+
+}
+
+.contact form button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    background: #333;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.contact form button:hover {
+    background: #525252;
+}
+/* footer */
+.footer {
+    background: #333;
+    padding: 20px 0;
+
+}
+
+.footer span {
+    color: #fff;
+
+}
+
+
+
+/* medias querys */
+@media screen and (max-width: 1024px) {
+    nav{
+        padding: 10px 40px 10px 0px;
+    }
+    .logo{
+        display: none;
+    }
+    .items{
+        flex: 4;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li.btnSpan {
+        display:block
+    }
+    nav{
+        z-index: 1;
+        padding: 9px 40px 9px 0;
+    }
+    nav ul .items {
+        z-index: -1;
+        position: fixed;
+        top: -220px;
+        right: 0;
+        width: 100%;
+        background: #222222;
+        display: inline-block;
+        transition: top .4s;
+    }
+    nav ul .items.show{
+        top: 60px;
+    }
+    nav ul .items li {
+        text-align: center;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+    nav ul .items li a {
+        font-size: 19px;
+    }
+}
